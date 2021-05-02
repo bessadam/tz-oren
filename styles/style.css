@@ -1,0 +1,326 @@
+:root {
+  --main-front-color: #F7F8FC;
+  --main-blue-color: #3751FF;
+}
+
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 1920px;
+}
+
+.header {
+  width: 100%;
+  background: #363740;
+}
+
+.main-content {
+  display: flex;
+}
+
+.site-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 33px;
+  height: 84px;
+
+  color: var(--main-front-color);
+}
+
+.site-head__left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.menu {
+  display: flex;
+  margin-left: 94px;
+}
+
+.menu-item {
+  margin: 0 22px;
+
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: #3E4049;
+}
+
+.site-head__right {
+  display: flex;
+  align-items: center;
+}
+
+.propose {
+  display: flex;
+  align-items: center;
+
+  border-right: 1px solid var(--main-front-color);
+
+  cursor: pointer;
+}
+
+.propose-item {
+  margin-right: 20px;
+  text-decoration: underline;
+
+}
+
+.icon {
+  text-decoration: none;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.nickname {
+  margin: 0 30px;
+}
+
+.site-stocks {
+  display: flex;
+  height: 38px;
+  padding: 12px 35px;  
+
+  color: #ffffff;
+  background: #3E4049;
+
+  font-weight: 300;
+}
+
+.currency {
+  display: flex;
+}
+
+.dollar {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.euro {
+  display: flex;
+  align-items: center;
+}
+
+.pos {
+  padding-left: 10px;
+}
+
+.index {
+  display: flex;
+  margin-left: 40px;
+}
+
+.idx-name {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  border-color: red;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.up {
+  border-color: lightgreen;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+
+/* sidebar */
+
+.sidebar {
+  background: #363740;
+  color: var(--main-front-color);
+  height: 958px;
+  width: 255px;
+}
+
+.sidebar-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item {
+  padding: 20px 35px;
+}
+
+.spec {
+  display: flex;
+
+  background: #3E4049;
+  cursor: pointer;
+}
+
+.pers-spec {
+  display: flex;
+
+  cursor: pointer;
+  background: #363740;
+}
+
+.spec-title {
+  padding-left: 15px;
+}
+
+.spec:hover {
+  border-left: 2px solid #fff;
+}
+
+/* main */
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 30px;
+  width: 220px;
+  height: 374px;
+  border: 1px solid #DFE0EB;
+  border-radius: 6px;
+
+  color: #252733;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 21px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 27px;
+}
+
+.more {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  justify-self: flex-end;
+  
+  border: 1px solid var(--main-blue-color);
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: var(--main-blue-color);
+  cursor: pointer;
+
+  transition: .5s;
+}
+
+.more-button {
+  padding: 11px 37px;
+
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.more:hover {
+  background: var(--main-blue-color);
+  color: #ffffff;
+}
+
+
+.status {
+  display: flex;
+  align-self: flex-end;
+
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border: 1px;
+
+}
+
+.connected {
+  width: 114px;
+  text-align: center;
+  padding: 10px;
+  
+  background: var(--main-blue-color);
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--main-front-color);
+}
+
+.disabled {
+  width: 114px;
+  text-align: center;
+  padding: 10px;
+  
+  background: #FF4B55;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--main-front-color);
+}
+
+.test {
+  width: 114px;
+  text-align: center;
+  padding: 10px;
+  
+  background: #FF8F3F;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--main-front-color);
+}
+
+
+
+.state {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 900;
+
+}
+
+.prom {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.district {
+  text-align: center;
+}
+
